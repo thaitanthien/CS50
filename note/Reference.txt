@@ -1,0 +1,57 @@
+Reference
+
+int a = 10;
+int & b = a;
+
+// a, b use interchangebly
+
+cout << a; // 10
+cout << b; // 10
+
+a = 9;
+cout << b; // 9
+
+b = 8;
+cout << a; // 8
+
+
+Pass by Value
+
+int x = 10;              |x = 10| (STACK)
+int y = x;               |y = 10| (STACK)
+
+
+// giam x di y don vi
+void giam_x_di_y(int x, int y) { // int x = tong, int y = 2
+
+    |x = 8|
+    |y = 2|
+
+    x = x - y;  
+}
+
+int tong = 10;         |tong=10| (STACK)
+giam_x_di_y(tong, 2); // int x = tong; int y = 2;
+cout << tong;  // 10
+
+Pass by Reference
+
+void giam_x_di_y(int & x, int y) {
+    // int & x = tong;
+    x = x - y; //
+}
+
+|tong|x = 10|
+giam_x_di_y(tong, 2)
+cout << tong; // 8
+
+Pass by Pointer
+
+void giam_x_di_y(int * x, int y) {
+    // int * x = &tong
+    *x = *x - y;
+}
+
+|tong = 10| <-- x
+giam_x_di_y(&tong, 2)
+cout << tong; // 8

@@ -1,0 +1,35 @@
+FUNCTIONS
+- code reuse
+- code clean
+
+PSEUDOCODE
+
+boolean isCreditValid
+    -
+    
+
+boolean isVisaCredit
+    - check the number of digits (13)
+    - check if starts with 4
+
+boolean isAmexCredit
+    -
+    -
+
+credit
+
+if (isCreditValid)  // according to Luhn's algorithm
+    if (isAmexCredit)
+        -> AMEX
+    else if (isVisaCredit)
+        -> VISA
+    else if (isMasterCredit)
+        -> MASTERCARD
+    else
+        -> INVALID    
+else
+    -> INVALID
+
+READ DIGITS FROM NUMBER
+
+

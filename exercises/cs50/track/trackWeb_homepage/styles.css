@@ -1,0 +1,25 @@
+h1 {
+    text-align: center;
+    color: salmon;
+}
+
+#name {
+    color: crimson;
+    opacity: 0.5;
+}
+
+.title {
+    text-emphasis: underline;
+    font-family: verdana;
+    color: MediumSeaGreen;
+}
+
+td {
+    border: 1px solid black;
+    padding: 4px;
+}
+
+li:hover {
+    text-align: center;
+    color: blue;
+}

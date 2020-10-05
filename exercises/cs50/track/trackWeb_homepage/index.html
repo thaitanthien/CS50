@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>My Webpage</title>
+
+        <script>
+            function drop(){
+                let rate = document.querySelector('#rate').value;
+                if(rate === ''){
+                    rate = '0'
+                }
+                alert('You have rate rock ' + rate + ' star')
+            }
+        </script>
+    </head>
+    <body>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="navbar-nav">
+                <a class="nav-link active" href="index.html">Home</a>
+                <a class="nav-link" href="about.html">About</a>
+                <a class="nav-link" href="songs.html">Songs</a>
+                <a class="nav-link" href="tours.html">Tours</a>
+            </div>
+        </nav>
+
+        <main>
+            <h1>
+                <i>Hello, this is my first web page!</i>
+            </h1>
+            <h2>
+                <small>How much do you like rock? Let's rate within 5 star!</small>
+            </h2>
+            <form onsubmit="drop(); return false;">
+                <input type="text" id="rate">
+                <input type="submit">
+            </form>
+
+            <h2>
+                <small>My favorite rock music band is </small><span id="name">NIGHTWISH</span>
+            </h2>
+            <image src="nightwish.jpg" alt="Picture of the band">
+            <h3 class="title">There are 6 members</h3>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Role</th>
+                </tr>
+                <tr>
+                    <td>Tuomas Holopainen</td>
+                    <td>Keyboards, Piano, Synthesizers</td>
+                </tr>
+                <tr>
+                    <td>Emppu Vuorine</td>
+                    <td>Guitars</td>
+                </tr>
+                <tr>
+                    <td>Marco Hietala</td>
+                    <td>Bass, Vocals</td>
+                </tr>
+                <tr>
+                    <td>Troy Donockley</td>
+                    <td>Uilleann Pipes, Tin whisle, Guitar</td>
+                </tr>
+                <tr>
+                    <td>Floor Jansen</td>
+                    <td>Lead Vocals</td>
+                </tr>
+                <tr>
+                    <td>Kai Hahto</td>
+                    <td>Drums</td>
+                </tr>
+            </table>
+            <h3 class="title">Some albums</h3>
+            <ul>
+                <li>Oceanborn</li>
+                <li>Once</li>
+                <li>Imaginaerum</li>
+                <li>Endless Forms Most Beautiful</li>
+            </ul>
+            <h3>
+                <small>See more about <a href="https://nightwish.com/">Nightwish</a>.</small>
+            </h3>
+        </main>
+    </body>
+</html>
